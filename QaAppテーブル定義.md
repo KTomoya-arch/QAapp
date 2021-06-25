@@ -1,0 +1,23 @@
+- users
+ - user_id:integer
+ - username:string
+ - password:string
+ - email:string
+ - image:string
+ - admin:integer
+ - created_at:timestamps
+ - updated_at:timestamps
+- posts
+ - post_id:integer
+ - title:string
+ - content:text
+ - user_id
+ - created_at:timestamps
+ - updated_at:timestamps
+- answers
+ - response_id:integer
+ - response:text
+ - user_id:integer
+ - post_id:integer
+ - created_at:timestamps
+ - updated_at:timestamps
