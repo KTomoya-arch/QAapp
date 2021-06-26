@@ -4,19 +4,20 @@
  - password:string
  - email:string
  - image:string
- - admin:integer
+ - admin:boolean
  - created_at:timestamps
  - updated_at:timestamps
-- posts
- - post_id:integer
+- questions
+ - question_id:integer
  - title:string
  - content:text
+ - resolved:boolean
  - user_id
  - created_at:timestamps
  - updated_at:timestamps
 - answers
- - response_id:integer
- - response:text
+ - content_id:integer
+ - content:text
  - user_id:integer
  - post_id:integer
  - created_at:timestamps
